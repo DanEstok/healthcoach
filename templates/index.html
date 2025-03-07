@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Coach - Your Personal Wellness Assistant</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Health Coach</h2>
+                <p>Your Wellness Assistant</p>
+            </div>
+            
+            <div class="sidebar-nav">
+                <ul>
+                    <li><a href="/" class="active">Chat</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </div>
+            
+            <div class="saved-chats">
+                <h3>Saved Conversations</h3>
+                <div class="action-buttons">
+                    <button class="action-btn primary" onclick="createNewChat()">New Chat</button>
+                </div>
+                <ul id="chat-list" class="chat-list">
+                    <!-- Chat history will be loaded here -->
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="container">
+                <div class="header">
+                    <h1>Health Coach</h1>
+                    <p>Your Personal Wellness Assistant</p>
+                </div>
+                <div id="chat-container" class="chat-container"></div>
+                <div class="input-container">
+                    <input type="text" id="user-input" placeholder="Ask me about wellness, nutrition, or fitness..." autocomplete="off">
+                    <button id="send-button" onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Daniel Estok - Spark Tech Repair. All rights reserved.</p>
+    </footer>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
