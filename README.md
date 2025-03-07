@@ -38,7 +38,7 @@ _Designed by Daniel Estok - Spark Tech Repair_
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/DanEstok/healthcoach.git
 cd healthcoach
 
 # Create a virtual environment
